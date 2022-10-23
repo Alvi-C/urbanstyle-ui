@@ -1,3 +1,104 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.banner-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+}
+.directory-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu-item {
+  min-width: 30%;
+  height: 240px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 7.5px 15px;
+  overflow: hidden;
+}
+.background-image {
+  background-image: url("https://i.ibb.co/GCCdy8t/womens.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.title {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 22px;
+  color: #4a4a4a;
+}
+
+.content {
+  height: 40px;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.7;
+  position: absolute;
+}
+.large {
+  height: 380px;
+}
+.menu-item:first-child {
+  margin-right: 7.5px;
+}
+.menu-item:last-child {
+  margin-left: 7.5px;
+}
+
+.menu-item:hover .background-image,
+.content {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  opacity: 0.9;
+}
+
+/* collections area 
+.collections {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.collection-item {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  align-items: center;
+  position: relative;
+}
+.image {
+  background-image: url("https://i.ibb.co/ZYW3VTp/brown-brim.png");
+  width: 100%;
+  height: 95%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5px;
+}
+.collection-footer {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.name {
+  width: 90%;
+  margin-bottom: 15px;
+} */
